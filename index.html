@@ -12,14 +12,28 @@
 </head>
 
 <body>
-    <article class="container">
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a href="/" class="navbar-brand">Whiskey Drop</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign in / Sign up</a></li>
+        </ul>
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i> Great whiskey deliverd to your door!</i></p>
+            <a href="/login">Sign in / Sign up</a>
+        </div>
+    </nav>
+    <article class="container mt-3">
         <!-- callout -->
         <div class="row">
             <div class="col-12">
-                <section class="callout">
+                <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to you doorstep</h1>
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                        <s>€19.99</s> <strong><mark>First one is free!</mark></strong></p>
+                        <s class="d-none d-sm-inline">€19.99</s>
+                        <span class="d-inline d-sm-none"></span>
+                        <strong><mark>First one is free!</mark></strong></p>
                     <button class="btn btn-success btn-lg">Sign Up!</button>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
                 </section>
@@ -37,16 +51,26 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I've been introducedto more then 10 international whiskeys I know about.</p>
-                        <p>Jane Doe</p>
-                    </blockquote>
+                    <div class="media">
+                        <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I've been introducedto more then 10 international whiskeys I know about.</p>
+                                <p>Jane Doe</p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I haven't been sober for months!</p>
-                        <p>Jane Doe</p>
-                    </blockquote>
+                    <div class="media">
+                        <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I haven't been sober for months!</p>
+                                <p>Jane Doe</p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -71,9 +95,8 @@
                     </div>
                 </div>
 
-
-                <div class="feature">
-                    <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature">
                         <h3>Feature 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
                             nisl ut aliquip ex ea commodo consequat.</p>
@@ -81,8 +104,8 @@
                     </div>
                 </div>
 
-                <div class="feature">
-                    <div class="col-12 d-md-none d-lg-block col-lg-4">
+                <div class="col-12 d-md-none d-lg-block col-lg-4">
+                    <div class="feature">
                         <h3>Feature 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
                             nisl ut aliquip ex ea commodo consequat.</p>
@@ -91,6 +114,7 @@
                 </div>
             </div>
         </section>
+        <hr>
 
         <section>
             <div class="col-12">
