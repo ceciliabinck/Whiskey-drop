@@ -1,5 +1,12 @@
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-wrapper {}
+
+.container-warpper--red{
+    background-color: #f05f40;
+    color: white;
 }
 
 .alert-container .col-12 {
@@ -11,7 +18,6 @@ body {
     border-radius: 0;
     margin-bottom: 0;
     padding: 5px 15px;
-    z-index: 1;
     background-color: #eec802;
     border-color: #eec802;
 }
@@ -44,20 +50,48 @@ body {
 
 .montly-favorites {}
 
+/* Page header*/
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
 /*block-divider*/
 
 .block-divider {
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider--orange {
     background-color: #f05f40;
 }
 
+.block-divider--white {
+    background-color: white;
+}
+
 .block-divider--short {
     width: 35px;
+}
+
+/*Content containers*/
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 /*navbar*/
@@ -68,6 +102,8 @@ body {
     left: 0;
     padding-left: 0;
     padding-right: 0;
+    z-index: 1;
+
 }
 
 .navbar {
@@ -75,7 +111,6 @@ body {
     border: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, .25);
-    z-index: 1;
 }
 
 .navbar .navbar-toggler {
@@ -133,4 +168,29 @@ body {
 .btn--red:active:focus {
     background-color: #df4929;
     border-color: #df4929;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.montly-favorites-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
 }
